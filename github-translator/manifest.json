@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub 汉化",
+  "version": "0.5",
+  "description": "将Github多年没有的中文版本添加进来(x)",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
